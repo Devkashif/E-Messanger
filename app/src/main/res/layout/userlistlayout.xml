@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/allUserprofile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1pt"
+            android:layout_marginBottom="1pt"
+            android:layout_marginTop="2pt"
+            android:src="@drawable/userdefalt" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/allUserName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/online_status"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/onlineicon"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/allUserStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:text="Status" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/frontn"
+    tools:context=".Wecome_page">
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/wel_reg_btn"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/fbutton_color_wet_asphalt"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Create Account"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fButtonColor="@color/colorAccent" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/logbtn"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/fbutton_color_wet_asphalt"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large.Inverse"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fButtonColor="@color/colorAccent" />
+
+
+</RelativeLayout>

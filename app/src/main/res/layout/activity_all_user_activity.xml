@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".all_user_activity"
+    android:background="@drawable/easybk">
+
+    <include
+        android:id="@+id/all_user"
+        layout="@layout/app_bar_layout" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@drawable/ic_search_name_24dp"
+        android:background="@drawable/search_input_layout"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/userList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="6dp" />
+
+
+</RelativeLayout>

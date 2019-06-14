@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mdkashif.new_fire">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Offline_Capability"
+        android:allowBackup="true"
+        android:icon="@mipmap/cahtinglogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/cahtinglogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register_activity"
+            android:parentActivityName=".Wecome_page" />
+        <activity android:name=".Wecome_page" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".SettingsActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".all_user_activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".User_Profile_Activity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="35f07b8f7abe1796d54a9f7f56040cea97cadc81" />
+
+        <activity android:name=".SetupProfile" />
+
+        <service android:name=".Notification.MyFirebaseIdServices"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Notification.MyFirebaseMessangingServices"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

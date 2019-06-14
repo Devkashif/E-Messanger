@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ed130a04"
+    tools:context=".User_Profile_Activity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/userProfileBar"/>
+
+    <ImageView
+        android:id="@+id/frndprofileimg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignTop="@+id/userProfileBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/userdefalt" />
+
+    <TextView
+        android:id="@+id/frndDisplayName"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frndprofileimg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#fff"
+        android:text="Display_Name"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/friendStatus"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frndDisplayName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp"
+        android:text="Hey there i am usnig EasyChat App"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/frnd_req_btn"
+        android:layout_width="244dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:background="@drawable/btnreq"
+        android:text="Send Freind Request"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/dec_frnd_req_btn"
+        android:layout_width="244dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/btnreq"
+        android:text="Decline Freind Request"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="123dp"
+        android:textColor="#fff"
+        android:text="Total Freind"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
